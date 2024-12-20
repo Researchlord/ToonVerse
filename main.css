@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: black;
+    color:white;
+}
+header{
+    background-image: url(spiderman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+   min-height:100vh;
+    width:100%;
+    position:relative;
+}
+.container{
+     padding:10px 25px;
+     display: flex;
+     height:70px;
+     justify-content: space-between;
+     align-items:center;
+     background-color: black;
+     width:100%;
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(122, 43, 43);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo a span{
+    color:rgba(255, 0, 0, 0.799)
+}
+ .ul-links{
+    display: flex;
+    gap:1.3rem;
+}
+.ul-links li{
+    text-transform: capitalize;
+    list-style-type: none;
+}
+.ul-links li a{
+    text-decoration: none;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .fa{
+    display: none;
+}
+#show-menu{
+    font-size: 30px;
+}
+/*Hero Section */
+
+.hero-section{
+    margin-top: 150px;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding:10px;
+}
+.hero-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-spacing:3px;
+    text-align: center;
+    color:white;
+    font-size:2.4rem;
+   text-shadow: 1px 2px 2px  orangered;
+}
+.hero-logo h1{
+    text-decoration: none;
+    color:rgb(122, 43, 43);
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 8px;
+}
+.hero-logo h1 span{
+    color:rgba(255, 0, 0, 0.799)
+}
+.hero-section h2{
+    color:black;
+    text-shadow: 1px 1px 7px white;
+    font-weight: bolder;
+}
+.hero-inner-wrapper{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.hero-innerWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.5rem;
+    align-items: center;
+    background-color: black;
+    height:100px;
+    width:fit-content;
+    padding:60px 25px;
+    border-radius: 7px;
+    box-shadow: 1px 8px 8px black;
+}
+.inner-box h1{
+    color:rgb(149, 42, 3);
+}
+.searchbar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:0.5rem;
+    flex-wrap: wrap;
+}
+.searchbar input{
+  height:1.8rem;
+  width:260px;
+  outline:none;
+}
+.searchbar button{
+    width:90px;
+     height:32px;
+    background-color: rgb(209, 4, 4);
+    outline: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: medium;
+    border:none;
+}
+/* hero responsivenesss section*/
+@media(max-width:440px){
+    .hero-innerWrapper{
+        padding:70px 10px;
+        margin: 0 20px;
+        box-sizing: border-box;
+    }
+    .searchbar input{
+        height:2rem;
+        width:250px;
+      }
+}
+
+/*page two*/
+
+.page-two-container h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.toon-container{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.toon-container img{
+    width:220px;
+    height:300px;
+}
+
+footer{
+    padding:60px  30px;
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(19, 19, 19);
+}
+footer h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media(max-width:500px){
+  .hero-logo{
+    font-size:1.6rem;
+  }
+  .hero-logo h1{
+    font-size: 1.6rem;
+  }
+}
+
+
+
+@media(max-width:700px){
+    .container .fa{
+        display:block;
+    }
+       .ul-links li {
+        display:block;
+       }
+       .navbar-links{
+        position:absolute;
+        background: black;
+        color:white;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:700px;
+        text-align: left;
+        z-index:2;
+       }
+       .navbar-links .fa{
+        display:block;
+        color:white;
+        margin: 10px;
+        font-size: 1.3rem;
+       }
+       .ul-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       }
+}

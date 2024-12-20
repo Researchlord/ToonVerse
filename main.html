@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Movies  | ToonVerse - Universe of all sort of Cartoons and animation</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      .card-wrapper{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap:1rem;
+      }
+      .card{
+        border:1px solid white;
+        height:500px
+      }
+      .card img{
+        width:280px;
+        height:400px;
+      }
+      .card h3{
+        padding:15px;
+      }
+      .rating{
+        display:flex;
+        justify-content: first baseline;
+        align-items:stretch;
+        margin:0 auto;
+      }
+    </style>
+</head>
+<body>
+        <div class="container">
+                  <div class="logo"> <a href="#">Toon<span>Verse</span></a></div>
+         <nav class="navbar-links" id="navLinks">
+         <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul class="ul-links">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="main.html">Top Movies</a></li>
+                <li><a href="">Affiliate</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+         <i class="fa fa-bars" id="show-menu" onclick="showMenu()"></i>
+       </div>
+
+         <div class="card-container">
+             <div class="card-wrapper">
+                <div class="card">
+                  <img src="jl dark apokolips war.jpg" alt="Justice league unlimited">
+                  <h3>Justice League apokolips war</h3>
+                  <div class="rating">
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                </div>
+                </div>
+                <div class="card">
+                       <img src="Nezha image.jpeg" alt="Nezha">
+                       <h3>Nezha : The Reborn</h3>
+                       <div class="rating">
+                        <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                        <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                        <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                        <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                        <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                        </div>
+                </div>
+               <div class="card">
+                <img src="Batman.jpg" alt="Batman :the dark knight return">
+                <h3>Batman : The Dark Knight<br> Return</h3>
+                <div class="rating">
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  </div>
+               </div>
+                  <div class="card">
+                    <img src="spiderman.jpg" alt="spiderman :Across the spiderverse">
+                    <h3>Spiderman : Across The <br>SpiderVerse</h3>
+                    <div class="rating">
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      </div>
+                  </div>
+             </div>
+             <br>
+             <div class="card-wrapper">
+              <div class="card">
+                <img src="Boss baby.jpeg" alt="Boss Baby">
+                <h3>Boss Baby </h3>
+                <div class="rating">
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  </div>
+              </div>
+              <div class="card">
+                     <img src="jl unlimited.jpg" alt="Justice League Unlimited ">
+                     <h3>Justice League Unlimited </h3>
+                     <div class="rating">
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                      </div>
+              </div>
+             <div class="card">
+              <img src="avatar.jpeg" alt="Avatar : the last airbender">
+              <h3>Avatar : The Last Airbender</h3>
+              <div class="rating">
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                </div>
+             </div>
+                <div class="card">
+                  <img src="raya and the last dragon.jpeg" alt="Raya and the last dragon">
+                  <h3>Raya and The Last Dragon</h3>
+                  <div class="rating">
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    </div>
+                </div>
+           </div>
+        <br>
+           <div class="card-wrapper">
+            <div class="card">
+              <img src="sonic2.jpg" alt="Sonic the Hedgehog">
+              <h3>Sonic the Hedgehog</h3>
+              <div class="rating">
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                </div>
+            </div>
+            <div class="card">
+                   <img src="Iwaju.jpeg" alt="Iwaju ">
+                   <h3>Iwaju </h3>
+                   <div class="rating">
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                    </div>
+            </div>
+           <div class="card">
+            <img src="man of steel.jpg" alt="Man of steel">
+            <h3>Man Of Steel</h3>
+            <div class="rating">
+              <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+              <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+              <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+              <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+              <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+              </div>
+           </div>
+              <div class="card">
+                <img src="raya and the last dragon.jpeg" alt="Raya and the last dragon">
+                <h3>Raya and The Last Dragon</h3>
+                <div class="rating">
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  <i class="fa fa-star" id="ratingIcon" onClick="ratings()"></i>
+                  </div>
+              </div>
+         </div>
+         </div>
+
+       <footer>
+        <h3>Copyright @2024 <span>ToonVerse </span>All Rights Reserved</h3>
+        <h3>Designed with <i class="fa fa-heart"></i> by Dev Emma</h3>
+      </footer>
+       <script src=main.js></script>
+</body>
+</html>
